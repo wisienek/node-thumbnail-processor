@@ -1,0 +1,14 @@
+.docker/
+node_modules/
+*.log
+/**/README.md
+Dockerfile*
+.dockerignore
+npm-debug.log
+README.md
+.git
+.cache
+coverage
+logs
+*.md
+.env

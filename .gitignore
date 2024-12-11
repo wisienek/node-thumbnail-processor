@@ -1,0 +1,120 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+/docs
+
+# dependencies
+**/node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.scannerwork
+
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+
+**/.env
+**/.env.*
+!**/.env.example
+.env.test
+.docker/
+ormconfig.json
+*.js.map
+/tools/executors/db-utils/db-import/main.js
+# Serverless
+.serverless
+.webpack
+.entry_point.lock
+
+/sniffer-res
+
+# Terraform
+/deployment/**/.terraform/*
+/deployment/**/*.tfstate
+/deployment/**/*.tfstate.*
+/deployment/**/crash.log
+/deployment/**/crash.*.log
+/deployment/**/*.tfvars
+/deployment/**/override.tf
+/deployment/**/override.tf.json
+/deployment/**/*_override.tf
+/deployment/**/*_override.tf.json
+/deployment/**/.terraformrc
+/deployment/**/terraform.rc
+/deployment/**/*.pem
+/deployment/**/*_key
+/deployment/**/credentials.json
+/deployment/terraform/meteotrack/builds
+
+**/*.pem
+
+.gitlab-ci-local
+
+.vscode
+
+/buckets
+
+**/.yarn-cache/**/*
+!.yarn-cache/.gitkeep
+.nx-container
+
+**/.ts-node/
+**/temp/**/*
+!tools/assistant/embeddings/temp/*
+**/__pycache__
+
+# Next.js
+.next
+
+# scripts that save me from losing my mind when testing stripe
+confirm-p-intent.sh
+confirm-s-intent.sh
+
+# FE libs locales hack
+apps/**/locales/libs/
+
+depcheck.json
+
+.secrets.env
+.env.backup-*
+.e2e-internal.env
+.e2e-local.env
+.e2e.env
+
+.profile/
+.tmp/
+*.log
+reports/*.xml
+
+# test results
+geospatial/sampling-zones/src/test_results
+
+.nx/cache
