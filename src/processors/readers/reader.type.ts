@@ -1,8 +1,5 @@
 type ReaderType = {
-  read: <T extends unknown>(
-    filePath: string,
-    validateDataFunction?: (item: unknown) => item is T
-  ) => Promise<T[] | undefined>;
+  read: <T>(filePath: string, validateDataFunction?: (item: unknown) => item is T) => Promise<T[] | undefined>;
 };
 
 enum Readers {

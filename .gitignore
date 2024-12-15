@@ -46,15 +46,11 @@ Thumbs.db
 !**/.env.example
 .env.test
 .docker/
-ormconfig.json
 *.js.map
-/tools/executors/db-utils/db-import/main.js
 # Serverless
 .serverless
 .webpack
 .entry_point.lock
-
-/sniffer-res
 
 # Terraform
 /deployment/**/.terraform/*
@@ -72,7 +68,6 @@ ormconfig.json
 /deployment/**/*.pem
 /deployment/**/*_key
 /deployment/**/credentials.json
-/deployment/terraform/meteotrack/builds
 
 **/*.pem
 
@@ -80,41 +75,13 @@ ormconfig.json
 
 .vscode
 
-/buckets
-
 **/.yarn-cache/**/*
 !.yarn-cache/.gitkeep
-.nx-container
 
 **/.ts-node/
 **/temp/**/*
-!tools/assistant/embeddings/temp/*
-**/__pycache__
-
-# Next.js
-.next
-
-# scripts that save me from losing my mind when testing stripe
-confirm-p-intent.sh
-confirm-s-intent.sh
-
-# FE libs locales hack
-apps/**/locales/libs/
-
-depcheck.json
-
-.secrets.env
-.env.backup-*
-.e2e-internal.env
-.e2e-local.env
-.e2e.env
 
 .profile/
 .tmp/
 *.log
 reports/*.xml
-
-# test results
-geospatial/sampling-zones/src/test_results
-
-.nx/cache

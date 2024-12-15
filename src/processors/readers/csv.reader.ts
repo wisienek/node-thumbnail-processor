@@ -31,8 +31,12 @@ class CsvReader implements ReaderType {
             }
 
             parsed.push(...results.data);
-          } catch (error: any) {
-            reject(new Error(`Data validation failed: ${error?.message}`));
+          } catch (error) {
+            reject(
+              new Error(
+                `Data validation failed: ${!!error && typeof error === 'object' && 'message' in error ? error['message'] : error}`
+              )
+            );
           }
         },
         complete: () => {

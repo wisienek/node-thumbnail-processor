@@ -1,6 +1,6 @@
 {
   "root": true,
-  "ignorePatterns": ["**/*"],
+  "ignorePatterns": ["node_modules/*", "dist/*"],
   "plugins": [],
   "overrides": [
     {
@@ -13,7 +13,45 @@
       "parser": "@typescript-eslint/parser",
       "plugins": ["@typescript-eslint/eslint-plugin"],
       "rules": {
-        "curly": "error"
+        "curly": "error",
+        "@typescript-eslint/prefer-for-of": "error",
+        "@typescript-eslit/no-extra-semi": "error",
+        "no-extra-semi": "off",
+        "@typescript-eslint/no-explicit-any": "erorr",
+        "@typescript-eslint/no-duplicate-enum-values": "warn",
+        "@typescript-eslint/explicit-function-return-type": [
+          "error",
+          {
+            "allowFunctionsWithoutTypeParameters": true,
+            "allowIIFEs": true
+          }
+        ],
+        "@typescript-eslint/ban-types": [
+          "error",
+          {
+            "types": {
+              "{}": false
+            },
+            "extendedDefaults": true
+          }
+        ],
+        "@typescript-eslint/consistent-type-imports": [
+          "warn",
+          {
+            "prefer": "type-imports"
+          }
+        ],
+        "@typescript-eslint/no-unused-vars": [
+          "warn",
+          {
+            "args": "all",
+            "argsIgnorePattern": "^_",
+            "caughtErrors": "all",
+            "caughtErrorsIgnorePattern": "^_",
+            "destructuredArrayIgnorePattern": "^_",
+            "ignoreResetSiblings": true
+          }
+        ]
       }
     },
     {
